@@ -1,0 +1,24 @@
+{
+  "name": "sharpie-jmx",
+  "version": "0.0.1",
+  "author": "Charlie Sharpsteen <source@sharpsteen.net>",
+  "summary": "Configure JMX for Java services",
+  "license": "Apache-2.0",
+  "source": "https://github.com/Sharpie/puppet-jmx",
+  "project_page": "https://github.com/Sharpie/puppet-jmx",
+  "issues_url": "https://github.com/Sharpie/puppet-jmx/issues",
+  "tags": ["java", "jmx", "monitoring"],
+  "dependencies": [
+    {"name": "puppetlabs-stdlib", "version_requirement": "4.x"},
+    {"name": "puppetlabs-inifile", "version_requirement": "1.x"},
+    {"name": "puppetlabs-java_ks", "version_requirement": "1.x"}
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "4.x"
+    }
+  ],
+  "data_provider": null
+}
+

@@ -1,0 +1,23 @@
+# Managed centrally by Puppet
+com.sun.management.jmxremote.port = <%= @port %>
+com.sun.management.jmxremote.rmi.port = <%= @rmi_port %>
+com.sun.management.jmxremote.local.only = <%= @local_only %>
+<%- @_user_config.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
+<%- @_role_config.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
+<%- @_ssl_config.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
+<%- @_ssl_auth_config.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
+<%- @_ssl_config_file.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
+
+<%- @properties.each do |key, value| -%>
+<%= key %> = <%= value %>
+<% end -%>
